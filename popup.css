@@ -1,0 +1,131 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 380px;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.password-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #f9f9f9;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #fff;
+}
+
+.strength-output {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #333;
+}
+
+.weak {
+    color: #e74c3c;
+}
+
+.medium {
+    color: #f39c12;
+}
+
+.strong {
+    color: #2ecc71;
+}
+
+.requirements {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.requirements li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.requirements li:before {
+    content: "•";
+    margin-right: 10px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+.requirements .valid:before {
+    color: #2ecc71;
+}
+
+.requirements .valid {
+    color: #2ecc71;
+}
+
+.requirements .invalid {
+    color: #e74c3c;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="password"] {
+        padding: 12px;
+    }
+
+    .strength-output {
+        font-size: 14px;
+    }
+
+    .requirements li {
+        font-size: 12px;
+    }
+}
+ 

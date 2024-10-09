@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass Meter</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength</h1>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter password">
+            <div id="strength-output" class="strength-output">Strength: </div>
+        </div>
+        <ul class="requirements">
+            <li id="length" class="invalid">At least 8 characters</li>
+            <li id="uppercase" class="invalid">At least one uppercase letter</li>
+            <li id="number" class="invalid">At least one number</li>
+            <li id="special" class="invalid">At least one special character</li>
+        </ul>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
